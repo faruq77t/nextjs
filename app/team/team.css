@@ -1,0 +1,143 @@
+.team-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Başlık */
+.team-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+/* Rol ve meta */
+.team-container .meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+/* Fotoğraf */
+.team-container img {
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Bio ve içerik */
+.team-container .content {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Sosyal linkler */
+.team-container .social-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-container .social-links a {
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.team-container .social-links a.twitter { background-color: #1DA1F2; }
+.team-container .social-links a.twitter:hover { background-color: #0d95e8; }
+
+.team-container .social-links a.linkedin { background-color: #0077B5; }
+.team-container .social-links a.linkedin:hover { background-color: #005983; }
+
+.team-container .social-links a.github { background-color: #333; }
+.team-container .social-links a.github:hover { background-color: #000; }
+
+/* Geri butonu */
+.team-container .back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s ease;
+}
+
+.team-container .back-link:hover {
+  background-color: #005bb5;
+}
+
+/* Mobil uyumlu */
+@media (max-width: 600px) {
+  .team-container img {
+    max-width: 120px;
+    height: 120px;
+  }
+
+  .team-container .social-links {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+.team-container {
+  padding: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  transition: transform 0.2s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.position {
+  font-style: italic;
+  color: #555;
+}
+
+.view-profile {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.view-profile:hover {
+  text-decoration: underline;
+}

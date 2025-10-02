@@ -1,0 +1,117 @@
+/* Genel Container */
+.posts-container, .post-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Sayfa Başlıkları */
+.posts-container h1, .post-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+/* Tek Post Meta */
+.post-container .meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Post Listesi Meta */
+.post-card .meta {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+/* Fotoğraf */
+.post-container img, .post-card img.post-thumb {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* İçerik */
+.post-container .content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Geri Butonu */
+.post-container .back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s ease;
+}
+.post-container .back-link:hover {
+  background-color: #005bb5;
+}
+
+/* Paylaşım Butonları */
+.share-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.share-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.share-btn.whatsapp { background-color: #25D366; }
+.share-btn.whatsapp:hover { background-color: #1ebe57; }
+.share-btn.facebook { background-color: #3b5998; }
+.share-btn.facebook:hover { background-color: #334b85; }
+.share-btn.twitter { background-color: #1DA1F2; }
+.share-btn.twitter:hover { background-color: #0d95e8; }
+.share-btn.copy { background-color: #555; }
+.share-btn.copy:hover { background-color: #333; }
+
+/* Post Kartları (Liste) */
+.post-card {
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.post-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.post-card .excerpt {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+.post-card .read-more {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+.post-card .read-more:hover {
+  text-decoration: underline;
+}

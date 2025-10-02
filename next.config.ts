@@ -1,8 +1,11 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // experimental bölümünden appDir ve fs kaldırıldı
+  
+  experimental: {
+    // Diğer deneysel özellikler buraya...
+   
+  }
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactStrictMode: true,
-};
-
-export default nextConfig;
+module.exports = nextConfig
